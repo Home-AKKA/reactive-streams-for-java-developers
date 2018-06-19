@@ -1,0 +1,6 @@
+--6o32FydSLhrcRopSaeai3OiX
+Content-Type: text/plain
+Content-Disposition: form-data; filename="someTxt.txt"; name=""
+
+6. something else
+--6o32FydSLhrcRopSaeai3OiX--

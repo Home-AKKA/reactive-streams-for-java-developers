@@ -1,0 +1,4 @@
+2.  [DEBUG] starting subsystem 1
+4.  [DEBUG] starting subsystem 2
+9.  [DEBUG] working...
+10. [DEBUG] all done

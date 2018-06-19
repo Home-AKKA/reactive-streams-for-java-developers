@@ -1,0 +1,32 @@
+apply plugin: 'application'
+mainClassName = 'com.softwaremill.reactive.CsvProcessor'
+
+run {
+    standardInput = System.in
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+def scalaVersion = "2.12"
+
+dependencies {
+    compile "com.typesafe.akka:akka-http_$scalaVersion:10.0.9"
+    compile "com.typesafe.akka:akka-stream_$scalaVersion:2.5.4"
+    compile "com.lightbend.akka:akka-stream-alpakka-file_$scalaVersion:0.11"
+    compile "com.lightbend.akka:akka-stream-alpakka-csv_$scalaVersion:0.11"
+
+    compile 'ch.qos.logback:logback-classic:1.1.7'
+
+    compile 'com.google.inject:guice:4.0'
+    compile "com.typesafe.akka:akka-http-jackson_$scalaVersion:10.1.2"
+
+//    compile 'com.fasterxml.jackson.core:jackson-databind:2.2.3'
+//    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+//    compile 'org.codehaus.jackson:jackson-core-asl:1.9.13'
+//    compile 'org.mapstruct:mapstruct:1.0.0.Final'
+//    compile 'org.mapstruct:mapstruct-processor:1.2.0.Final'
+//    compile 'org.mapstruct:mapstruct-jdk8:1.2.0.Final'
+}
